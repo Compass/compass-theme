@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Compass::Theme::VERSION
   s.authors     = ["Scott Davis"]
   s.email       = ["jetviper21@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://compass-style.org"
+  s.summary     = %q{Compass Stylesheets for documentation site and extension repo}
+  s.description = s.summary
 
   s.rubyforge_project = "compass-theme"
 
@@ -21,4 +21,10 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  
+  
+  s.add_runtime_dependency 'compass', '~> 0.11'
+  s.add_runtime_dependency 'compass-susy-plugin', ">=0.7.0.pre8"
+  s.add_runtime_dependency 'css-slideshow', "0.2.0"
+  
 end
