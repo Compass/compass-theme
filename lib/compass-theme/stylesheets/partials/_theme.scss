@@ -44,6 +44,10 @@
   body#home .overview div { @extend .inset-panel-#{$theme};
     h4 { @extend .horizontal-rule-#{$theme}; } }
   #featured_sites li { @extend .inset-panel-#{$theme}; }
+  
+  .site .tutorial page article img {
+    @extend .image-border-#{theme};
+  }
 
 }
 @mixin docs-theme($theme, $heading, $code, $nav-link, $docs-nav-selected, $module-nav-selected){
@@ -149,6 +153,11 @@
   .container textarea { background: darken(#2f2f2f, 6); }
 }
 
+.image-border-dark {
+  border:2px solid #121212;
+  @extend .round-corners-4;
+}
+
 @mixin dark-theme($docs: false) {
   $page-bg: #2f2f2f;
 
@@ -242,6 +251,11 @@
   background: rgba(#fff, .8);
   td.gutter { background: rgba(#000, .08); .line { border-right: 2px solid rgba(#000, .2); color: rgba(#000, .4); } }
   .container textarea { background: darken(#fff, .04); }
+}
+
+.image-border-light {
+  border:2px solid #bbb;
+  @extend .round-corners-4;
 }
 
 @mixin light-theme($docs: false) {
