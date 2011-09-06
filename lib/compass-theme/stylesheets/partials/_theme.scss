@@ -45,7 +45,7 @@
     h4 { @extend .horizontal-rule-#{$theme}; } }
   #featured_sites li { @extend .inset-panel-#{$theme}; }
   
-  .site .tutorial page article img {
+  .site .tutorial #page article img {
     @extend .image-border-#{theme};
   }
 
