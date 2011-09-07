@@ -33,7 +33,8 @@
 
   aside {
     h2 a { color: $strong-text; }
-    h2, h3 { @extend .horizontal-rule-#{$theme}; }}
+    h2, h3 { @extend .horizontal-rule-#{$theme}; }
+  }
 
   footer .links li { @extend .vertical-rule-#{$theme}; }
   code { @extend .code-block-#{$theme}; color: $code; }
@@ -45,8 +46,8 @@
     h4 { @extend .horizontal-rule-#{$theme}; } }
   #featured_sites li { @extend .inset-panel-#{$theme}; }
   
-  .tutorial #page article img {
-    @extend .image-border-#{theme};
+  body.tutorial #page article img {
+    @extend .image-border-#{$theme};
   }
 
 }
@@ -154,7 +155,7 @@
 }
 
 .image-border-dark {
-  border:2px solid #121212;
+  border:2px solid #BFBFBF;
   @extend .round-corners-4;
 }
 
@@ -254,7 +255,7 @@
 }
 
 .image-border-light {
-  border:2px solid #bbb;
+  border:2px solid #444444;
   @extend .round-corners-4;
 }
 
