@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   
   
   s.add_runtime_dependency 'compass', '~> 0.11'
-  s.add_runtime_dependency 'compass-susy-plugin', "~> 0.7.0.pre8"
+  s.add_runtime_dependency 'compass-susy-plugin', "~> 0.7.0"
   s.add_runtime_dependency 'css-slideshow', "0.2.0"
   
 end
