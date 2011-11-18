@@ -17,14 +17,10 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
   
   
   s.add_runtime_dependency 'compass', '~> 0.11'
-  s.add_runtime_dependency 'compass-susy-plugin', ">=0.7.0.pre8"
+  s.add_runtime_dependency 'compass-susy-plugin', "~> 0.7.0.pre8"
   s.add_runtime_dependency 'css-slideshow', "0.2.0"
   
 end
