@@ -27,15 +27,18 @@ body#home {
   h4 { font-size: 1.5em; }
   .overview {
     @extend .group;
-    .compass { width: 406px; float: left;
+    .compass { width: 330px; float: left;
       h4:before { content: "k"; } }
-    .sass { width: 275px; float: right; 
+    .sass { width: 350px; float: right; 
       h4:before { content: "2"; } }
-    div { 
+    .info-box {
       padding: 20px;
       h4 {
         padding-bottom: 12px;
         margin-bottom: 12px;
+        padding-left: 40px;
+        text-indent: -18px;
+        line-height: 1.333em;
         &:before {
           @extend .pictos;
           color: #fb292d;
@@ -45,7 +48,7 @@ body#home {
         }
       }
     }
-    ol { padding-left: 0; list-style: inside decimal; margin-bottom: 0; }
+    ol { padding-left: 18px; text-indent: -18px; list-style: inside decimal; margin-bottom: 0; }
     p { margin-bottom: 0; }
     ol, p { line-height: 1.8em; font-size: .95em;}
   }

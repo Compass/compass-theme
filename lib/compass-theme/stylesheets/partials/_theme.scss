@@ -42,7 +42,7 @@
   #theme_pref { @extend .theme-switch-#{$theme}; }
   #docs_panel div, .syntax_pref { background: $option-panel-bg; border-color: $option-panel-border; }
 
-  body#home .overview div { @extend .inset-panel-#{$theme};
+  body#home .overview .info-box { @extend .inset-panel-#{$theme};
     h4 { @extend .horizontal-rule-#{$theme}; } }
   #featured_sites li { @extend .inset-panel-#{$theme}; }
   
